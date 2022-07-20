@@ -7,7 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class WebDrivers {public static WebDriver getDriver(DriverManagerType browserName) {
+public class WebDrivers {
+    public static WebDriver getDriver(DriverManagerType browserName) 
+    {
     switch (browserName.getDriver()) {
         case "ChromeDriver":
             ChromeOptions chromeOptions = new ChromeOptions();
